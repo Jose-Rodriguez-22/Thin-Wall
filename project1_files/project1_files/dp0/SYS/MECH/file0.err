@@ -1,0 +1,557 @@
+/COM,ANSYS RELEASE 2024 R1           BUILD 24.1      UP20231106       10:13:19
+
+ *** WARNING ***                         CP =       0.016   TIME= 10:13:21
+ The temperature-dependent secant coefficient of thermal expansion for   
+ material 1 includes a temperature point of reference temperature (with  
+ a tolerance of 1 degree).  This data is ignored for the MPAMOD command  
+ operation to avoid a numerical singularity.                             
+
+ *** WARNING ***                         CP =       0.016   TIME= 10:13:21
+ The temperature-dependent secant coefficient of thermal expansion for   
+ material 2 includes a temperature point of reference temperature (with  
+ a tolerance of 1 degree).  This data is ignored for the MPAMOD command  
+ operation to avoid a numerical singularity.                             
+
+ *** WARNING ***                         CP =       0.016   TIME= 10:13:21
+ The temperature-dependent secant coefficient of thermal expansion for   
+ material 3 includes a temperature point of reference temperature (with  
+ a tolerance of 1 degree).  This data is ignored for the MPAMOD command  
+ operation to avoid a numerical singularity.                             
+
+ *** WARNING ***                         CP =       0.016   TIME= 10:13:21
+ The temperature-dependent secant coefficient of thermal expansion for   
+ material 4 includes a temperature point of reference temperature (with  
+ a tolerance of 1 degree).  This data is ignored for the MPAMOD command  
+ operation to avoid a numerical singularity.                             
+
+ *** WARNING ***                         CP =       0.031   TIME= 10:13:21
+ The temperature-dependent secant coefficient of thermal expansion for   
+ material 5 includes a temperature point of reference temperature (with  
+ a tolerance of 1 degree).  This data is ignored for the MPAMOD command  
+ operation to avoid a numerical singularity.                             
+
+ *** WARNING ***                         CP =       0.062   TIME= 10:13:22
+ Parameter LSTP already exists.  It is deleted and redefined by the *DIM 
+ command.                                                                
+
+ *** WARNING ***                         CP =       0.062   TIME= 10:13:22
+ Parameter R1 already exists.  It is deleted and redefined by the *DIM   
+ command.                                                                
+
+ *** WARNING ***                         CP =       0.062   TIME= 10:13:22
+ Parameter LD already exists.  It is deleted and redefined by the *DIM   
+ command.                                                                
+
+ *** WARNING ***                         CP =       0.062   TIME= 10:13:24
+ The minimum number of substeps (NSBMN = 10) is greater than the initial 
+ value for the number of substeps (NSBSTP = 1).  The NSBMN value is set  
+ to 1.                                                                   
+
+ *** WARNING ***                         CP =       0.062   TIME= 10:13:24
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       0.062   TIME= 10:13:25
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       0.062   TIME= 10:13:25
+ Material property DENS of material 1 of element 4 is evaluated at a     
+ temperature of 22, which is below the supplied temperature range.       
+ Temperature range checking terminates.                                  
+
+ *** WARNING ***                         CP =       0.609   TIME= 10:13:28
+ Material property DENS of material 1 of element 1 is evaluated at a     
+ temperature of -0.15, which is below the supplied temperature range.    
+ Temperature range checking terminates.                                  
+
+ *** WARNING ***                         CP =       0.609   TIME= 10:13:28
+ Material property DENS of material 1 of element 1 is evaluated at a     
+ temperature of -0.15, which is below the supplied temperature range.    
+ Temperature range checking terminates.                                  
+
+ *** WARNING ***                         CP =       0.609   TIME= 10:13:28
+ Material property DENS of material 1 of element 1 is evaluated at a     
+ temperature of -0.15, which is below the supplied temperature range.    
+ Temperature range checking terminates.                                  
+
+ *** WARNING ***                         CP =       0.812   TIME= 10:13:32
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       0.812   TIME= 10:13:32
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       1.031   TIME= 10:13:37
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       1.047   TIME= 10:13:37
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       1.219   TIME= 10:13:42
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       1.219   TIME= 10:13:42
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       1.594   TIME= 10:13:49
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       1.609   TIME= 10:13:49
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       1.875   TIME= 10:13:54
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       1.891   TIME= 10:13:54
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       2.109   TIME= 10:13:58
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       2.125   TIME= 10:13:58
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       2.344   TIME= 10:14:02
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       2.359   TIME= 10:14:02
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       2.625   TIME= 10:14:07
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       2.625   TIME= 10:14:07
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       2.938   TIME= 10:14:12
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       2.938   TIME= 10:14:12
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       3.094   TIME= 10:14:16
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       3.094   TIME= 10:14:16
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       3.297   TIME= 10:14:21
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       3.328   TIME= 10:14:21
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       3.641   TIME= 10:14:26
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       3.656   TIME= 10:14:26
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       3.953   TIME= 10:14:32
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       3.953   TIME= 10:14:32
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       4.281   TIME= 10:14:37
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       4.281   TIME= 10:14:37
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       4.547   TIME= 10:14:41
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       4.562   TIME= 10:14:41
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       4.750   TIME= 10:14:46
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       4.750   TIME= 10:14:46
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       5.031   TIME= 10:14:51
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       5.031   TIME= 10:14:51
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       5.312   TIME= 10:14:57
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       5.312   TIME= 10:14:57
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       5.719   TIME= 10:15:03
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       5.734   TIME= 10:15:03
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       5.953   TIME= 10:15:08
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       5.953   TIME= 10:15:08
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       6.109   TIME= 10:15:13
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       6.109   TIME= 10:15:13
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       6.312   TIME= 10:15:18
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       6.312   TIME= 10:15:18
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       6.516   TIME= 10:15:22
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       6.516   TIME= 10:15:22
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       6.641   TIME= 10:15:26
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       6.641   TIME= 10:15:27
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       6.859   TIME= 10:15:31
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       6.859   TIME= 10:15:31
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       6.984   TIME= 10:15:35
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       6.984   TIME= 10:15:35
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       7.219   TIME= 10:15:41
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       7.219   TIME= 10:15:41
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       7.438   TIME= 10:15:46
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       7.438   TIME= 10:15:46
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       7.750   TIME= 10:15:50
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       7.750   TIME= 10:15:51
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       7.984   TIME= 10:15:55
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       7.984   TIME= 10:15:55
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       8.141   TIME= 10:15:59
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       8.141   TIME= 10:16:00
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       8.250   TIME= 10:16:04
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       8.250   TIME= 10:16:04
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       8.500   TIME= 10:16:09
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       8.531   TIME= 10:16:09
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       8.844   TIME= 10:16:13
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       8.875   TIME= 10:16:13
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       9.125   TIME= 10:16:18
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       9.125   TIME= 10:16:18
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       9.359   TIME= 10:16:22
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       9.359   TIME= 10:16:22
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       9.547   TIME= 10:16:27
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       9.562   TIME= 10:16:27
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =       9.750   TIME= 10:16:31
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =       9.781   TIME= 10:16:31
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      10.062   TIME= 10:16:35
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =      10.094   TIME= 10:16:36
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      10.266   TIME= 10:16:40
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =      10.297   TIME= 10:16:40
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      10.359   TIME= 10:16:44
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =      10.375   TIME= 10:16:44
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      10.594   TIME= 10:16:49
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =      10.609   TIME= 10:16:49
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      10.766   TIME= 10:16:53
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =      10.766   TIME= 10:16:54
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      10.953   TIME= 10:16:58
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =      10.953   TIME= 10:16:58
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      11.188   TIME= 10:17:02
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =      11.188   TIME= 10:17:02
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      11.312   TIME= 10:17:07
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =      11.312   TIME= 10:17:07
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      11.594   TIME= 10:17:12
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =      11.625   TIME= 10:17:12
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      11.734   TIME= 10:17:16
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =      11.750   TIME= 10:17:16
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      11.891   TIME= 10:17:22
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =      11.891   TIME= 10:17:22
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      11.984   TIME= 10:17:27
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** WARNING ***                         CP =      12.000   TIME= 10:17:27
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** WARNING ***                         CP =      12.125   TIME= 10:17:33
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** ERROR ***                           CP =      12.125   TIME= 10:17:33
+ Subscript range error.  Parameter PT_LEN1 is dimensioned as 91 x 1,     
+ but location -1 x 1 is being requested                                  
+                                                                         
+
+ *** ERROR ***                           CP =      12.125   TIME= 10:17:33
+ No data exists for dimensioned parameter PT_LEN1 with subscripts -1 x   
+ 1.                                                                      
+
+ *** ERROR ***                           CP =      12.125   TIME= 10:17:33
+ The above error occurred processing field= DIST1-PT_LEN1(LOC31,1)       
+  Line= *SET,RT,                                                         
+ ((DIST%INDEX(INC2,1)%-PT_LEN%INDEX(INC2,1)%(LOC3%INDEX(INC2,1)%,1))/(PT 
+ _LEN%INDEX(INC2,1)%(LOC2%INDEX(INC2,1)%,1)-PT_LEN%INDEX(INC2,1)%(LOC3%I 
+ INDEX(INC2,1)%,1).                                                      
+
+ *** WARNING ***                         CP =      12.125   TIME= 10:17:33
+ During this session the elapsed time exceeds the CPU time by 1960%.     
+ This often indicates either a lack of physical memory (RAM) required    
+ to efficiently handle this simulation or a particularly slow hard       
+ drive configuration.  This simulation can be expected to run faster on  
+ identical hardware if additional RAM or a faster hard drive             
+ configuration is made available.  For more details, please see the      
+ Mechanical APDL Performance Guide which is part of the Ansys Help       
+ system.                                                                 

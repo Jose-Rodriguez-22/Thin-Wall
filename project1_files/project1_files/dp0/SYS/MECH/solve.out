@@ -1,0 +1,3212 @@
+
+ Ansys Mechanical Enterprise Academic Research     
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *         ANSYS MAPDL 2024 R1          LEGAL NOTICES          *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2024 Ansys, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of Ansys, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the Ansys, Inc. online documentation or the Ansys, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * Ansys, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * Ansys, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the Ansys, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the Ansys, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2024 R1 
+     
+ Point Releases and Patches installed:   
+     
+ Ansys, Inc. License Manager 2024 R1 
+ Viewer 2024 R1  
+ Discovery 2024 R1   
+ SpaceClaim 2024 R1  
+ Icepak (includes CFD-Post) 2024 R1  
+ Fluids 2024 R1  
+ Ansys Dynamic Reporting 2024 R1 
+ CFD-Post only 2024 R1   
+ CFX (includes CFD-Post) 2024 R1 
+ Chemkin 2024 R1 
+ EnSight 2024 R1 
+ FENSAP-ICE 2024 R1  
+ Fluent (includes CFD-Post) 2024 R1  
+ Polyflow (includes CFD-Post) 2024 R1
+ Forte (includes EnSight) 2024 R1
+ ICEM CFD 2024 R1
+ TurboGrid 2024 R1   
+ ACIS Geometry Interface 2024 R1 
+ AutoCAD Geometry Interface 2024 R1  
+ Catia, Version 4 Geometry Interface 2024 R1 
+ Catia, Version 5 Geometry Interface 2024 R1 
+ Catia, Version 6 Geometry Interface 2024 R1 
+ Creo Elements/Direct Modeling Geometry Interface 2024 R1
+ Creo Parametric Geometry Interface 2024 R1  
+ Inventor Geometry Interface 2024 R1 
+ JTOpen Geometry Interface 2024 R1   
+ NX Geometry Interface 2024 R1   
+ Parasolid Geometry Interface  2024 R1   
+ Solid Edge Geometry Interface 2024 R1   
+ SOLIDWORKS Geometry Interface 2024 R1   
+ Speos 2024 R1   
+ Speos HPC 2024 R1   
+ optiSLang 2024 R1   
+ Remote Solve Manager Standalone Services 2024 R1
+ Additive 2024 R1
+ Aqwa 2024 R1
+ Autodyn 2024 R1 
+ Customization Files for User Programmable Features 2024 R1  
+ LS-DYNA 2024 R1 
+ Material Calibration App 2024 R1
+ Mechanical Products 2024 R1 
+ Motion 2024 R1  
+ Sherlock 2024 R1
+ Sound - SAS 2024 R1 
+
+
+          *****  MAPDL COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = NOLIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  DISTRIBUTED MEMORY PARALLEL REQUESTED
+       4 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
+    TOTAL OF     4 CORES REQUESTED
+  INPUT FILE NAME              = H:\spring2025\additive1\_ProjectScratch\ScrE008\dummy.dat
+  OUTPUT FILE NAME             = H:\spring2025\additive1\_ProjectScratch\ScrE008\solve.out
+  START-UP FILE MODE           = NOREAD
+  STOP FILE MODE               = NOREAD
+
+ RELEASE= 2024 R1              BUILD= 24.1      UP20231106   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file0  10:13:20  JAN 30, 2025 CP=      0.016
+
+
+ PARAMETER _DS_PROGRESS =     999.0000000    
+
+ /INPUT FILE= ds.dat  LINE=       0
+
+
+
+ *** NOTE ***                            CP =       0.016   TIME= 10:13:20
+ The /CONFIG,NOELDB command is not valid in a distributed memory         
+ parallel solution.  Command is ignored.                                 
+
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  10.2222222    
+
+ TITLE= 
+ project1--Transient Thermal (C5)                                              
+
+  ACT Extensions:
+      LSDYNA, 2024.1
+      5f463412-bd3e-484b-87e7-cbc0a665e474, wbex
+ /COM,     ANSYSMotion, 2024.1
+      20180725-3f81-49eb-9f31-41364844c769, wbex
+ /COM,     MovingHeat, 4.1
+      dc7b91d1-0fd6-439f-811e-316ced903703, wbex
+  
+
+ SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = H:\spring2025\additive1\_ProjectScratch\ScrE008\
+
+ SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_SOLVERFILES_DIR(1) = H:\spring2025\additive1\project1_files\dp0\SYS\MECH\
+
+ SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_USERFILES_DIR(1) = H:\spring2025\additive1\project1_files\user_files\
+ --- Data in consistent NMM units. See Solving Units in the help system for more
+
+ MPA UNITS SPECIFIED FOR INTERNAL    
+  LENGTH      = MILLIMETERS (mm)
+  MASS        = TONNE (Mg)
+  TIME        = SECONDS (sec)
+  TEMPERATURE = CELSIUS (C)
+  TOFFSET     = 273.0
+  FORCE       = NEWTON (N)
+  HEAT        = MILLIJOULES (mJ)
+
+ INPUT  UNITS ARE ALSO SET TO MPA 
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:13:20  JAN 30, 2025 CP=      0.016
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+          ***** MAPDL ANALYSIS DEFINITION (PREP7) *****
+ *********** Nodes for the whole assembly ***********
+ *********** Elements for Body 1 "Part 1" ***********
+ *********** Elements for Body 2 "Part 2" ***********
+ *********** Elements for Body 3 "Part 3" ***********
+ *********** Elements for Body 4 "Part 4" ***********
+ *********** Elements for Body 5 "Part 5" ***********
+ *********** Send User Defined Coordinate System(s) ***********
+ *********** Send Materials ***********
+
+ *** WARNING ***                         CP =       0.016   TIME= 10:13:21
+ The temperature-dependent secant coefficient of thermal expansion for   
+ material 1 includes a temperature point of reference temperature (with  
+ a tolerance of 1 degree).  This data is ignored for the MPAMOD command  
+ operation to avoid a numerical singularity.                             
+
+ *** WARNING ***                         CP =       0.016   TIME= 10:13:21
+ The temperature-dependent secant coefficient of thermal expansion for   
+ material 2 includes a temperature point of reference temperature (with  
+ a tolerance of 1 degree).  This data is ignored for the MPAMOD command  
+ operation to avoid a numerical singularity.                             
+
+ *** WARNING ***                         CP =       0.016   TIME= 10:13:21
+ The temperature-dependent secant coefficient of thermal expansion for   
+ material 3 includes a temperature point of reference temperature (with  
+ a tolerance of 1 degree).  This data is ignored for the MPAMOD command  
+ operation to avoid a numerical singularity.                             
+
+ *** WARNING ***                         CP =       0.016   TIME= 10:13:21
+ The temperature-dependent secant coefficient of thermal expansion for   
+ material 4 includes a temperature point of reference temperature (with  
+ a tolerance of 1 degree).  This data is ignored for the MPAMOD command  
+ operation to avoid a numerical singularity.                             
+
+ *** WARNING ***                         CP =       0.031   TIME= 10:13:21
+ The temperature-dependent secant coefficient of thermal expansion for   
+ material 5 includes a temperature point of reference temperature (with  
+ a tolerance of 1 degree).  This data is ignored for the MPAMOD command  
+ operation to avoid a numerical singularity.                             
+ *********** Create Contact "Contact Region" ***********
+             Real Constant Set For Above Contact Is 7 & 6
+ *********** Create Contact "Contact Region 2" ***********
+             Real Constant Set For Above Contact Is 9 & 8
+ *********** Create Contact "Contact Region 3" ***********
+             Real Constant Set For Above Contact Is 11 & 10
+ *********** Create Contact "Contact Region 4" ***********
+             Real Constant Set For Above Contact Is 13 & 12
+ *********** Create Contact "Contact Region 5" ***********
+             Real Constant Set For Above Contact Is 15 & 14
+ *********** Create Contact "Contact Region 6" ***********
+             Real Constant Set For Above Contact Is 17 & 16
+ *********** Create "Convection" ***********
+ ***************** Define Uniform Initial temperature ***************
+
+
+ ***** ROUTINE COMPLETED *****  CP =         0.031
+
+
+ --- Number of total nodes = 19360
+ --- Number of contact elements = 7186
+ --- Number of spring elements = 0
+ --- Number of bearing elements = 0
+ --- Number of solid elements = 3412
+ --- Number of condensed parts = 0
+ --- Number of total elements = 10598
+
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  10.2225000    
+ ****************************************************************************
+ *************************    SOLUTION       ********************************
+ ****************************************************************************
+
+ *****  MAPDL SOLUTION ROUTINE  *****
+
+
+ PERFORM A TRANSIENT ANALYSIS
+  THIS WILL BE A NEW ANALYSIS
+
+ STEP BOUNDARY CONDITION KEY= 1
+
+ CONTACT INFORMATION PRINTOUT LEVEL       1
+
+ CHECK INITIAL OPEN/CLOSED STATUS OF SELECTED CONTACT ELEMENTS
+      AND LIST DETAILED CONTACT PAIR INFORMATION
+
+ SPLIT CONTACT SURFACES AT SOLVE PHASE
+
+    NUMBER OF SPLITTING TBD BY PROGRAM
+
+ DO NOT SAVE ANY RESTART FILES AT ALL
+
+ DO NOT COMBINE ELEMENT MATRIX FILES (.emat) AFTER DISTRIBUTED PARALLEL SOLUTION
+
+ DO NOT COMBINE ELEMENT SAVE DATA FILES (.esav) AFTER DISTRIBUTED PARALLEL SOLUTION
+
+ Use Quasi-Linear Thermal Transient Solution
+   Tolerance for Reform of Thermal Matrix=     0.050
+   ***** Fast Property Table Information *****
+    Number of entries per property=    64
+    Minimum temperature =     -0.15
+    Maximum temperature =   2726.85
+  Enable multipass algorithm
+
+ NLHIST: ADDED NODAL RESULTS HISTORY FOR:
+       NAME = MAX_TEMP                        
+  ITEM/COMP = TEMPMAX 
+       NODE =         0
+
+ NLHIST: ADDED NODAL RESULTS HISTORY FOR:
+       NAME = MIN_TEMP                        
+  ITEM/COMP = TEMPMIN 
+       NODE =         0
+ ********* Initial Time Increment Check And Fourier Modulus *********
+  Specified Initial Time Increment: 2
+  Estimated Increment Needed, le*le/alpha, Body 1: 0.138294
+  Estimated Increment Needed, le*le/alpha, Body 2: 0.138294
+  Estimated Increment Needed, le*le/alpha, Body 3: 0.138294
+  Estimated Increment Needed, le*le/alpha, Body 4: 0.138294
+  Estimated Increment Needed, le*le/alpha, Body 5: 3.82615
+ ****************************************************
+ ******************* SOLVE FOR LS 1 OF 1 ****************
+
+ SELECT       FOR ITEM=TYPE COMPONENT=    
+  IN RANGE        18 TO         18 STEP          1
+
+       3482  ELEMENTS (OF      10598  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ SELECT      ALL NODES HAVING ANY ELEMENT IN ELEMENT SET.
+
+      10456 NODES (OF      19360  DEFINED) SELECTED FROM
+     3482 SELECTED ELEMENTS BY NSLE COMMAND.
+
+ GENERATE SURFACE LOAD CONV ON SURFACE DEFINED BY ALL SELECTED NODES
+ VALUES=_CONVVARI69  22.0000000    
+
+ NUMBER OF CONV ELEMENT FACE LOADS STORED =       3482
+
+ ALL SELECT   FOR ITEM=NODE COMPONENT=    
+  IN RANGE         1 TO      19360 STEP          1
+
+      19360  NODES (OF      19360  DEFINED) SELECTED BY NSEL  COMMAND.
+
+ ALL SELECT   FOR ITEM=ELEM COMPONENT=    
+  IN RANGE         1 TO      14080 STEP          1
+
+      10598  ELEMENTS (OF      10598  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ PRINTOUT RESUMED BY /GOP
+
+ USE AUTOMATIC TIME STEPPING THIS LOAD STEP
+
+ USE     100 SUBSTEPS INITIALLY THIS LOAD STEP FOR ALL  DEGREES OF FREEDOM
+ FOR AUTOMATIC TIME STEPPING:
+   USE   1000 SUBSTEPS AS A MAXIMUM
+   USE     10 SUBSTEPS AS A MINIMUM
+
+ TIME=  200.00    
+
+ INCLUDE TRANSIENT EFFECTS FOR  ALL DEGREES OF FREEDOM THIS LOAD STEP
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE RSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EANG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE VENG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE FFLU ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE CONT ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ PRINTOUT RESUMED BY /GOP
+
+ WRITE MISC ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR THE ENTITIES DEFINED BY COMPONENT _ELMISC 
+
+ CONVERGENCE ON HEAT BASED ON THE NORM OF THE N-R LOAD
+   WITH A TOLERANCE OF 0.1000E-02 AND A MINIMUM REFERENCE VALUE OF 0.1000E-02
+   USING THE L2 NORM (CHECK THE SRSS VALUE)
+  
+ *********** Moving Heat Flux: Moving Heat Flux ***********
+  
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         0.062
+
+
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:13:22  JAN 30, 2025 CP=      0.062
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+          ***** MAPDL ANALYSIS DEFINITION (PREP7) *****
+ CMBLOCK read of NODE component FACE1     completed
+ CMBLOCK read of NODE component PATH1     completed
+ CMBLOCK read of NODE component START1    completed
+ You have already entered the general preprocessor (PREP7).              
+
+ SELECT ALL ENTITIES OF TYPE= ALL  AND BELOW
+
+ PARAMETER INX =     1.000000000    
+
+ PARAMETER LSTP =     200.0000000    
+
+ PARAMETER VEL =     1.000000000    
+
+ PARAMETER SEG =     201.0000000    
+
+ PARAMETER R1 =     1.000000000    
+
+ PARAMETER LD =     50000.00000    
+
+ PARAMETER TM_L =     200.0000000    
+
+ PARAMETER TM_S =     0.000000000    
+
+ PARAMETER FP = Yes     
+
+ *IF  FP                                ( = Yes              )  EQ  
+      Yes                               ( = Yes              )  THEN    
+
+ OPENED FILE= INDEX1.TXT FOR COMMAND FILE DATA 
+
+
+  COMMAND FILE CLOSED 
+
+
+ OPENED FILE= VELOCITY1.TXT FOR COMMAND FILE DATA 
+
+
+  COMMAND FILE CLOSED 
+
+
+ OPENED FILE= LSTP1.TXT FOR COMMAND FILE DATA 
+
+
+  COMMAND FILE CLOSED 
+
+
+ OPENED FILE= CON1.TXT FOR COMMAND FILE DATA 
+
+
+  COMMAND FILE CLOSED 
+
+
+ OPENED FILE= LD1.TXT FOR COMMAND FILE DATA 
+
+
+  COMMAND FILE CLOSED 
+
+
+ OPENED FILE= TMST1.TXT FOR COMMAND FILE DATA 
+
+
+  COMMAND FILE CLOSED 
+
+
+ OPENED FILE= TMLT1.TXT FOR COMMAND FILE DATA 
+
+
+  COMMAND FILE CLOSED 
+
+
+ *ELSEIF  FP                                ( = Yes              )  EQ  
+          No                                ( = No               )  THEN    
+
+ *ELSE
+
+ *ENDIF
+
+ PARAMETER NLINE    =         1.000000
+
+ SET PARAMETER DIMENSIONS ON  INDEX TYPE=ARRA  DIMENSIONS=     1     1     1
+
+ SET PARAMETER DIMENSIONS ON  VELOCITY TYPE=ARRA  DIMENSIONS=     1     1     1
+
+ SET PARAMETER DIMENSIONS ON  LSTP TYPE=ARRA  DIMENSIONS=     1     1     1
+
+ *** WARNING ***                         CP =       0.062   TIME= 10:13:22
+ Parameter LSTP already exists.  It is deleted and redefined by the *DIM 
+ command.                                                                
+
+ SET PARAMETER DIMENSIONS ON  R1 TYPE=ARRA  DIMENSIONS=     1     1     1
+
+ *** WARNING ***                         CP =       0.062   TIME= 10:13:22
+ Parameter R1 already exists.  It is deleted and redefined by the *DIM   
+ command.                                                                
+
+ SET PARAMETER DIMENSIONS ON  LD TYPE=ARRA  DIMENSIONS=     1     1     1
+
+ *** WARNING ***                         CP =       0.062   TIME= 10:13:22
+ Parameter LD already exists.  It is deleted and redefined by the *DIM   
+ command.                                                                
+
+ SET PARAMETER DIMENSIONS ON  TMST TYPE=ARRA  DIMENSIONS=     1     1     1
+
+ SET PARAMETER DIMENSIONS ON  TMLT TYPE=ARRA  DIMENSIONS=     1     1     1
+
+ VECTOR READ OPERATION  *VREAD  
+  INDEX    READ FROM FILE INDEX1.TXT
+ VECTOR LENGTH=      1
+ LOOP DIRECTIONS=IJK   COUNTS=       1       1       1
+ FORMAT=(f3.0)                                                                
+
+ VECTOR READ OPERATION  *VREAD  
+  VELOCITY READ FROM FILE VELOCITY1.TXT
+ VECTOR LENGTH=      1
+ LOOP DIRECTIONS=IJK   COUNTS=       1       1       1
+ FORMAT=(f10.5)                                                               
+
+ VECTOR READ OPERATION  *VREAD  
+  LSTP     READ FROM FILE LSTP1.TXT
+ VECTOR LENGTH=      1
+ LOOP DIRECTIONS=IJK   COUNTS=       1       1       1
+ FORMAT=(f3.0)                                                                
+
+ VECTOR READ OPERATION  *VREAD  
+  R1       READ FROM FILE CON1.TXT
+ VECTOR LENGTH=      1
+ LOOP DIRECTIONS=IJK   COUNTS=       1       1       1
+ FORMAT=(f10.5)                                                               
+
+ VECTOR READ OPERATION  *VREAD  
+  LD       READ FROM FILE LD1.TXT
+ VECTOR LENGTH=      1
+ LOOP DIRECTIONS=IJK   COUNTS=       1       1       1
+ FORMAT=(f30.3)                                                               
+
+ VECTOR READ OPERATION  *VREAD  
+  TMST     READ FROM FILE TMST1.TXT
+ VECTOR LENGTH=      1
+ LOOP DIRECTIONS=IJK   COUNTS=       1       1       1
+ FORMAT=(f10.5)                                                               
+
+ VECTOR READ OPERATION  *VREAD  
+  TMLT     READ FROM FILE TMLT1.TXT
+ VECTOR LENGTH=      1
+ LOOP DIRECTIONS=IJK   COUNTS=       1       1       1
+ FORMAT=(f10.5)                                                               
+
+ *DO LOOP ON PARAMETER= INC1 FROM  1.0000     TO  1.0000     BY  1.0000    
+
+ *IF  INC1                              ( =   1.00000     )  EQ  
+      1                                 ( =   1.00000     )  THEN    
+
+ SELECT      COMPONENT FACE1                                                                                                                                                                                                                                                           
+
+ *ELSE
+
+ *ENDIF
+
+ *ENDDO  INDEX= INC1                            
+
+ DEFINITION OF COMPONENT = FACE      ENTITY=NODE
+
+ SELECT ALL ENTITIES OF TYPE= ALL  AND BELOW
+
+ *DO LOOP ON PARAMETER= INC1 FROM  1.0000     TO  1.0000     BY  1.0000    
+
+ SELECT      COMPONENT PATH1                                                                                                                                                                                                                                                           
+
+ *GET  PT_ND1    FROM  NODE  ITEM=COUN       VALUE=  91.0000000     
+
+ SET PARAMETER DIMENSIONS ON  N_PT1 TYPE=ARRA  DIMENSIONS=    91     1     1
+
+ SET PARAMETER DIMENSIONS ON  X_PT1 TYPE=ARRA  DIMENSIONS=    91     1     1
+
+ SET PARAMETER DIMENSIONS ON  Y_PT1 TYPE=ARRA  DIMENSIONS=    91     1     1
+
+ SET PARAMETER DIMENSIONS ON  Z_PT1 TYPE=ARRA  DIMENSIONS=    91     1     1
+
+ SET PARAMETER DIMENSIONS ON  PT_LEN1 TYPE=ARRA  DIMENSIONS=    91     1     1
+
+ SELECT      COMPONENT START1                                                                                                                                                                                                                                                          
+
+ *GET  ND1       FROM  NODE  ITEM=NUM  MIN   VALUE=  4890.00000     
+
+ SELECT ALL ENTITIES OF TYPE= ALL  AND BELOW
+
+ SELECT      COMPONENT PATH1                                                                                                                                                                                                                                                           
+
+ PARAMETER PT_LEN1(1,1) =     0.000000000    
+
+ *DO LOOP ON PARAMETER= INC2 FROM  1.0000     TO  91.000     BY  1.0000    
+
+ PARAMETER N_PT1(INC2,1) =     4890.000000    
+
+ PARAMETER X_PT1(INC2,1) =     0.000000000    
+
+ PARAMETER Y_PT1(INC2,1) =     25.40000000    
+
+ PARAMETER Z_PT1(INC2,1) =     6.000000000    
+
+ PARAMETER ND2 =     7578.000000    
+
+ *IF  INC2                              ( =   1.00000     )  NE  
+      PT_ND%INDEX(INC1,1)%              ( =   91.0000     )  THEN    
+
+ PARAMETER PT_LEN1(INC2+1,1) =    0.5644444400    
+
+ *ENDIF
+
+ UNSELECT     FOR ITEM=NODE COMPONENT=    
+  IN RANGE      4890 TO       4890 STEP          1
+
+         90  NODES (OF      19360  DEFINED) SELECTED BY  NSEL  COMMAND.
+
+ PARAMETER ND1 =     7578.000000    
+
+ *ENDDO  INDEX= INC2                            
+
+ SELECT ALL ENTITIES OF TYPE= ALL  AND BELOW
+
+ PARAMETER TOT_LEN1 =     50.80000000    
+
+ PARAMETER VEL_M1 =     1.000000000    
+
+ *ENDDO  INDEX= INC1                            
+
+ VECTOR PARAMETER OPERATION *VSCFUN 
+  MAX_T    = MAX  TMLT            
+ VECTOR LENGTH=       1
+ RESULT=  200.00    
+
+ VECTOR PARAMETER OPERATION *VSCFUN 
+  MIN_T    = MIN  TMST            
+ VECTOR LENGTH=       1
+ RESULT=  0.0000    
+
+ PARAMETER DT =     1.000000000    
+
+ SET PARAMETER DIMENSIONS ON  T_NR TYPE=ARRA  DIMENSIONS=   201     1     1
+
+ SET PARAMETER DIMENSIONS ON  P1 TYPE=ARRA  DIMENSIONS=   201     1     1
+
+ VECTOR FILL OPERATION  *VFILL  
+  T_NR             = RAMP
+ VECTOR LENGTH=     201
+ INITIAL VALUE=  0.0000      STEP INCREMENT=  1.0000    
+
+ *DO LOOP ON PARAMETER= INC1 FROM  1.0000     TO  1.0000     BY  1.0000    
+
+ PARAMETER TM_S =     0.000000000    
+
+ VECTOR PARAMETER OPERATION *VOPER  
+  P1               = T_NR             GE   TM_S            
+  VECTOR LENGTH=     201
+
+ VECTOR PARAMETER OPERATION *VSCFUN 
+  TS1      = FIRS P1              
+ VECTOR LENGTH=     201
+ RESULT=  1.0000    
+
+ PARAMETER TM_E =     200.0000000    
+
+ VECTOR PARAMETER OPERATION *VOPER  
+  P1               = T_NR             GE   TM_E            
+  VECTOR LENGTH=     201
+
+ VECTOR PARAMETER OPERATION *VSCFUN 
+  TE1      = FIRS P1              
+ VECTOR LENGTH=     201
+ RESULT=  201.00    
+
+ PARAMETER STATUS- TS1  (     60 PARAMETERS DEFINED)
+                  (INCLUDING       23 INTERNAL PARAMETERS)
+
+ NAME                              VALUE                        TYPE  DIMENSIONS
+ TS1                               1.00000000                  SCALAR
+
+ PARAMETER STATUS- TE1  (     60 PARAMETERS DEFINED)
+                  (INCLUDING       23 INTERNAL PARAMETERS)
+
+ NAME                              VALUE                        TYPE  DIMENSIONS
+ TE1                               201.000000                  SCALAR
+
+ *ENDDO  INDEX= INC1                            
+
+ SELECT ALL ENTITIES OF TYPE= ALL  AND BELOW
+
+ *GET  NDT       FROM  NODE  ITEM=COUN       VALUE=  19360.0000     
+
+ SET PARAMETER DIMENSIONS ON  VARY_LD TYPE=ARRA  DIMENSIONS= 19360     1     1
+
+ SET PARAMETER DIMENSIONS ON  X_LOC TYPE=ARRA  DIMENSIONS= 19360     1     1
+
+ SET PARAMETER DIMENSIONS ON  Y_LOC TYPE=ARRA  DIMENSIONS= 19360     1     1
+
+ SET PARAMETER DIMENSIONS ON  Z_LOC TYPE=ARRA  DIMENSIONS= 19360     1     1
+
+ VECTOR GET OPERATION  X_LOC  VECTOR LENGTH=   19360
+ NAME= NODE         0  LOC   X   
+
+ VECTOR GET OPERATION  Y_LOC  VECTOR LENGTH=   19360
+ NAME= NODE         0  LOC   Y   
+
+ VECTOR GET OPERATION  Z_LOC  VECTOR LENGTH=   19360
+ NAME= NODE         0  LOC   Z   
+
+ *DO LOOP ON PARAMETER= INC1 FROM  1.0000     TO  1.0000     BY  1.0000    
+
+ SELECT      COMPONENT FACE1                                                                                                                                                                                                                                                           
+
+ VECTOR GET OPERATION  NMASK  VECTOR LENGTH=   19360
+ NAME= NODE         0  NSEL      
+
+ VECTOR PARAMETER OPERATION *VOPER  
+  NMASK_1          = NMASK            ADD  1               
+  VECTOR LENGTH=   19360
+
+ VECTOR PARAMETER OPERATION *VOPER  
+  NMASK1           = NMASK_1          DIV  2               
+  VECTOR LENGTH=   19360
+
+ *ENDDO  INDEX= INC1                            
+
+ SELECT ALL ENTITIES OF TYPE= ALL  AND BELOW
+
+ *GET  MAX_TYP   FROM  ETYP  ITEM=NUM  MAX   VALUE=  18.0000000    
+
+ *GET  MAX_MAT   FROM  MAT   ITEM=NUM  MAX   VALUE=  5.00000000    
+
+ *GET  MAX_RL    FROM  RCON  ITEM=NUM  MAX   VALUE=  17.0000000    
+
+ ELEMENT TYPE         19 IS SURF152      3-D THERMAL SURFACE         
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      0      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ CURRENT NODAL DOF SET IS  TEMP
+  THREE-DIMENSIONAL MODEL
+
+ ELEMENT TYPE      19 IS SURF152      3-D THERMAL SURFACE         
+  KEYOPT( 1- 6)=        0      0      0        0      0      0
+  KEYOPT( 7-12)=        0      1      0        0      0      0
+  KEYOPT(13-18)=        0      0      0        0      0      0
+
+ CURRENT NODAL DOF SET IS  TEMP
+  THREE-DIMENSIONAL MODEL
+
+ ELEMENT TYPE SET TO        19
+
+ MATERIAL NUMBER SET TO         6
+
+ REAL CONSTANT NUMBER=       18
+
+ SELECT      COMPONENT FACE                                                                                                                                                                                                                                                            
+
+ GENERATE ELEMENTS ON SURFACE DEFINED BY SELECTED NODES
+  TYPE=       19  REAL=       18  MATERIAL=        6  ESYS=    0
+
+ NUMBER OF ELEMENTS GENERATED=        720                         
+
+ SELECT ALL ENTITIES OF TYPE= ALL  AND BELOW
+
+ PARAMETER EXT      =         0.000000
+
+ *IF  EXT                               ( =   0.00000     )  EQ  
+      1                                 ( =   1.00000     )  THEN    
+
+ *ENDIF
+
+ PARAMETER EXT      =         0.000000
+
+ *IF  EXT                               ( =   0.00000     )  EQ  
+      1                                 ( =   1.00000     )  THEN    
+
+ *ENDIF
+
+
+ ***** ROUTINE COMPLETED *****  CP =         0.062
+
+
+
+ *****  MAPDL SOLUTION ROUTINE  *****
+
+ *DO LOOP ON PARAMETER= INC1 FROM  1.0000     TO  201.00     BY  1.0000    
+
+ *DO LOOP ON PARAMETER= INC2 FROM  1.0000     TO  1.0000     BY  1.0000    
+
+ *IF  INC1                              ( =   1.00000     )  GE  
+      TS%INDEX(INC2,1)%                 ( =   1.00000     )          
+ *****  AND   *****
+      INC1                              ( =   1.00000     )  LE  
+      TE%INDEX(INC2,1)%                 ( =   201.000     )  THEN    
+
+ PARAMETER DIST_11 =     0.000000000    
+
+ PARAMETER DIST_21 =     0.000000000    
+
+ PARAMETER DIST1 =     0.000000000    
+
+ VECTOR PARAMETER OPERATION *VOPER  
+  LOC11            = PT_LEN1          GE   DIST1           
+  VECTOR LENGTH=      91
+
+ VECTOR PARAMETER OPERATION *VSCFUN 
+  LOC21    = FIRS LOC11           
+ VECTOR LENGTH=      91
+ RESULT=  1.0000    
+
+ PARAMETER LOC31 =     0.000000000    
+
+ PARAMETER A0 =     91.00000000    
+
+ *IF  INC1                              ( =   1.00000     )  EQ  
+      TS%INDEX(INC2,1)%                 ( =   1.00000     )  THEN    
+
+ PARAMETER A =     0.000000000    
+
+ PARAMETER B =     25.40000000    
+
+ PARAMETER C =     6.000000000    
+
+ *ELSEIF  INC1                              ( =   1.00000     )  EQ  
+          TE%INDEX(INC2,1)%                 ( =   201.000     )  THEN    
+
+ *ELSE
+
+ *ENDIF
+
+ VECTOR PARAMETER OPERATION *VOPER  
+  A1               = X_LOC            SUB  A               
+  VECTOR LENGTH=   19360
+
+ VECTOR PARAMETER OPERATION *VOPER  
+  B1               = Y_LOC            SUB  B               
+  VECTOR LENGTH=   19360
+
+ VECTOR PARAMETER OPERATION *VOPER  
+  C1               = Z_LOC            SUB  C               
+  VECTOR LENGTH=   19360
+
+ VECTOR PARAMETER OPERATION *VOPER  
+  A2               = A1               MULT A1              
+  VECTOR LENGTH=   19360
+
+ VECTOR PARAMETER OPERATION *VOPER  
+  B2               = B1               MULT B1              
+  VECTOR LENGTH=   19360
+
+ VECTOR PARAMETER OPERATION *VOPER  
+  C2               = C1               MULT C1              
+  VECTOR LENGTH=   19360
+
+ VECTOR PARAMETER OPERATION *VOPER  
+  A3               = A2               ADD  B2              
+  VECTOR LENGTH=   19360
+
+ VECTOR PARAMETER OPERATION *VOPER  
+  B3               = A3               ADD  C2              
+  VECTOR LENGTH=   19360
+
+ PARAMETER R2 =    -1.000000000    
+
+ VECTOR PARAMETER OPERATION *VOPER  
+  A4               = B3               DIV  R2              
+  VECTOR LENGTH=   19360
+
+ VECTOR PARAMETER OPERATION *VFUN   
+  B4 = EXP   A4
+ VECTOR LENGTH=   19360
+
+ PARAMETER AA1 =     50000.00000    
+
+ VECTOR PARAMETER OPERATION *VOPER  
+  L_D1             = AA1              MULT B4              
+  VECTOR LENGTH=   19360
+
+ VECTOR PARAMETER OPERATION *VOPER  
+  VARY_LD1         = L_D1             MULT NMASK1          
+  VECTOR LENGTH=   19360
+
+ VECTOR PARAMETER OPERATION *VOPER  
+  VARY_LD          = VARY_LD          ADD  VARY_LD1        
+  VECTOR LENGTH=   19360
+
+ *ENDIF
+
+ *ENDDO  INDEX= INC2                            
+
+ USE THE VECTOR  VARY_LD   AS SURFACE LOAD FUNCTION
+
+ SELECT       FOR ITEM=TYPE COMPONENT=    
+  IN RANGE        19 TO         19 STEP          1
+
+        720  ELEMENTS (OF      11318  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ SPECIFIED SURFACE LOAD HFLU FOR ALL SELECTED ELEMENTS  LKEY = 1
+     VALUES =     0.0000         0.0000         0.0000         0.0000    
+
+ PARAMETER TM =     1.000000000    
+
+ TIME=  1.0000    
+
+ *** WARNING ***                         CP =       0.062   TIME= 10:13:24
+ The minimum number of substeps (NSBMN = 10) is greater than the initial 
+ value for the number of substeps (NSBSTP = 1).  The NSBMN value is set  
+ to 1.                                                                   
+
+ USE       1 SUBSTEPS INITIALLY THIS LOAD STEP FOR ALL  DEGREES OF FREEDOM
+ FOR AUTOMATIC TIME STEPPING:
+   USE   1000 SUBSTEPS AS A MAXIMUM
+   USE      1 SUBSTEPS AS A MINIMUM
+
+ SELECT ALL ENTITIES OF TYPE= ALL  AND BELOW
+
+ *** NOTE ***                            CP =       0.062   TIME= 10:13:24
+ The automatic domain decomposition logic has selected the MESH domain   
+ decomposition method with 4 processes per solution.                     
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       0.062   TIME= 10:13:24
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** NOTE ***                            CP =       0.062   TIME= 10:13:24
+ The model data was checked and warning messages were found.             
+  Please review output or errors file (                                  
+ H:\spring2025\additive1\_ProjectScratch\ScrE008\file0.err ) for these   
+ warning messages.                                                       
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:13:24  JAN 30, 2025 CP=      0.062
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . TEMP
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .TRANSIENT            
+      SOLUTION METHOD. . . . . . . . . . . . . . .QUASI                
+   OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  273.15    
+   PLASTIC MATERIAL PROPERTIES INCLUDED. . . . . .YES
+   NEWTON-RAPHSON OPTION . . . . . . . . . . . . .PROGRAM CHOSEN   
+   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
+
+ *** NOTE ***                            CP =       0.062   TIME= 10:13:24
+ Property DENS of material 1 is defined over a temperature range from    
+ 26.85 to 2726.85 which does not include the uniform temperature (22).   
+ Change either temperature range or the uniform temperature.  Checking   
+ for this condition discontinues.                                        
+
+ *** WARNING ***                         CP =       0.062   TIME= 10:13:25
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** NOTE ***                            CP =       0.062   TIME= 10:13:25
+ The step data was checked and warning messages were found.              
+  Please review output or errors file (                                  
+ H:\spring2025\additive1\_ProjectScratch\ScrE008\file0.err ) for these   
+ warning messages.                                                       
+
+ *** NOTE ***                            CP =       0.062   TIME= 10:13:25
+ The conditions for direct assembly have been met.  No .emat or .erot    
+ files will be produced.                                                 
+
+ CHECK INITIAL OPEN/CLOSED STATUS OF SELECTED CONTACT ELEMENTS
+      AND LIST DETAILED CONTACT PAIR INFORMATION
+
+ *** WARNING ***                         CP =       0.062   TIME= 10:13:25
+ Material property DENS of material 1 of element 4 is evaluated at a     
+ temperature of 22, which is below the supplied temperature range.       
+ Temperature range checking terminates.                                  
+
+     772 CONTACT ELEMENTS &    1080 TARGET ELEMENTS ARE UNSELECTED FOR PREPARATION OF          SPLITTING.
+       6 CONTACT PAIRS ARE UNSELECTED. 
+
+ *** NOTE ***                            CP =       0.281   TIME= 10:13:25
+ The maximum number of contact elements in any single contact pair is    
+ 180, which is smaller than the optimal domain size of 396 elements for  
+ the given number of CPU domains (4).  Therefore, no contact pairs are   
+ being split by the CNCH,DMP logic.                                      
+
+ BECAUSE SPLIT WAS NOT DONE FOR CONNECT REGION(S), UNSELECTED ELEMENTS ARE REVERTED (SELECTED). 
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 6 and contact element type 6 has been set up.  The         
+ companion pair has real constant set ID 7.  Both pairs should have the  
+ same behavior.                                                          
+ *WARNING*: The contact pairs have similar mesh patterns.  MAPDL will    
+ keep the current pair and deactivate its companion pair.                
+ Pure thermal contact is activated.
+ The emissivity is defined through the material property.
+ Thermal convection coefficient, environment temperature, and
+  heat flux are defined using the SFE command.
+ Target temperature is used for convection/radiation calculation
+  for near field contact.
+ Linear contact is defined
+ Contact detection at: Gauss integration point
+ Average contact surface length               0.99690    
+ Average contact pair depth                   0.75810    
+ Average target surface length                0.75194    
+ User defined pinball region PINB              1.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+ Thermal contact conductance coef. TCC         3929.9    
+ Heat radiation is excluded.
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Max.  Initial penetration 8.881784197E-16 was detected between contact  
+ element 7093 and target element 7588.                                   
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 7 and contact element type 6 has been set up.  The         
+ companion pair has real constant set ID 6.  Both pairs should have the  
+ same behavior.                                                          
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Pure thermal contact is activated.
+ The emissivity is defined through the material property.
+ Thermal convection coefficient, environment temperature, and
+  heat flux are defined using the SFE command.
+ Target temperature is used for convection/radiation calculation
+  for near field contact.
+ Linear contact is defined
+ Contact detection at: Gauss integration point
+ Average contact surface length               0.99690    
+ Average contact pair depth                   0.75810    
+ Average target surface length                0.75194    
+ User defined pinball region PINB              1.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+ Thermal contact conductance coef. TCC         3929.9    
+ Heat radiation is excluded.
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Max.  Initial penetration 8.881784197E-16 was detected between contact  
+ element 7277 and target element 7052.                                   
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 8 and contact element type 8 has been set up.  The         
+ companion pair has real constant set ID 9.  Both pairs should have the  
+ same behavior.                                                          
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Pure thermal contact is activated.
+ The emissivity is defined through the material property.
+ Thermal convection coefficient, environment temperature, and
+  heat flux are defined using the SFE command.
+ Target temperature is used for convection/radiation calculation
+  for near field contact.
+ Linear contact is defined
+ Contact detection at: Gauss integration point
+ Average contact surface length                1.0644    
+ Average contact pair depth                   0.37500    
+ Average target surface length                0.97847    
+ User defined pinball region PINB              1.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+ Thermal contact conductance coef. TCC         3929.9    
+ Heat radiation is excluded.
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Max.  Initial penetration 0 was detected between contact element 7795   
+ and target element 8334.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 9 and contact element type 8 has been set up.  The         
+ companion pair has real constant set ID 8.  Both pairs should have the  
+ same behavior.                                                          
+ MAPDL will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Pure thermal contact is activated.
+ The emissivity is defined through the material property.
+ Thermal convection coefficient, environment temperature, and
+  heat flux are defined using the SFE command.
+ Target temperature is used for convection/radiation calculation
+  for near field contact.
+ Linear contact is defined
+ Contact detection at: Gauss integration point
+ Average contact surface length               0.91642    
+ Average contact pair depth                   0.37500    
+ Average target surface length                0.97847    
+ User defined pinball region PINB              1.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+ Thermal contact conductance coef. TCC         3929.9    
+ Heat radiation is excluded.
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Max.  Initial penetration 0 was detected between contact element 7975   
+ and target element 7794.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 10 and contact element type 10 has been set up.  The       
+ companion pair has real constant set ID 11.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Pure thermal contact is activated.
+ The emissivity is defined through the material property.
+ Thermal convection coefficient, environment temperature, and
+  heat flux are defined using the SFE command.
+ Target temperature is used for convection/radiation calculation
+  for near field contact.
+ Linear contact is defined
+ Contact detection at: Gauss integration point
+ Average contact surface length               0.99546    
+ Average contact pair depth                   0.75000    
+ Average target surface length                 3.8195    
+ User defined pinball region PINB              1.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+ Thermal contact conductance coef. TCC         3929.9    
+ Heat radiation is excluded.
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Max.  Initial penetration 0 was detected between contact element 8515   
+ and target element 8733.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 11 and contact element type 10 has been set up.  The       
+ companion pair has real constant set ID 10.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Pure thermal contact is activated.
+ The emissivity is defined through the material property.
+ Thermal convection coefficient, environment temperature, and
+  heat flux are defined using the SFE command.
+ Target temperature is used for convection/radiation calculation
+  for near field contact.
+ Linear contact is defined
+ Contact detection at: Gauss integration point
+ Average contact surface length                3.7277    
+ Average contact pair depth                    3.1750    
+ Average target surface length                0.75194    
+ User defined pinball region PINB              1.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+ Thermal contact conductance coef. TCC         3929.9    
+ Heat radiation is excluded.
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Max.  Initial penetration 0 was detected between contact element 8695   
+ and target element 8424.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 12 and contact element type 12 has been set up.  The       
+ companion pair has real constant set ID 13.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Pure thermal contact is activated.
+ The emissivity is defined through the material property.
+ Thermal convection coefficient, environment temperature, and
+  heat flux are defined using the SFE command.
+ Target temperature is used for convection/radiation calculation
+  for near field contact.
+ Linear contact is defined
+ Contact detection at: Gauss integration point
+ Average contact surface length                1.0644    
+ Average contact pair depth                   0.37500    
+ Average target surface length                0.97847    
+ User defined pinball region PINB              1.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+ Thermal contact conductance coef. TCC         3929.9    
+ Heat radiation is excluded.
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Max.  Initial penetration 0 was detected between contact element 8927   
+ and target element 9466.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 13 and contact element type 12 has been set up.  The       
+ companion pair has real constant set ID 12.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Pure thermal contact is activated.
+ The emissivity is defined through the material property.
+ Thermal convection coefficient, environment temperature, and
+  heat flux are defined using the SFE command.
+ Target temperature is used for convection/radiation calculation
+  for near field contact.
+ Linear contact is defined
+ Contact detection at: Gauss integration point
+ Average contact surface length               0.91642    
+ Average contact pair depth                   0.37500    
+ Average target surface length                0.97847    
+ User defined pinball region PINB              1.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+ Thermal contact conductance coef. TCC         3929.9    
+ Heat radiation is excluded.
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Max.  Initial penetration 0 was detected between contact element 9107   
+ and target element 8926.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 14 and contact element type 14 has been set up.  The       
+ companion pair has real constant set ID 15.  Both pairs should have     
+ the same behavior.                                                      
+ *WARNING*: The contact pairs have similar mesh patterns.  MAPDL will    
+ keep the current pair and deactivate its companion pair.                
+ Pure thermal contact is activated.
+ The emissivity is defined through the material property.
+ Thermal convection coefficient, environment temperature, and
+  heat flux are defined using the SFE command.
+ Target temperature is used for convection/radiation calculation
+  for near field contact.
+ Linear contact is defined
+ Contact detection at: Gauss integration point
+ Average contact surface length               0.99690    
+ Average contact pair depth                   0.75810    
+ Average target surface length                0.75194    
+ User defined pinball region PINB              1.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+ Thermal contact conductance coef. TCC         3929.9    
+ Heat radiation is excluded.
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:26
+ Max.  Initial penetration 8.881784197E-16 was detected between contact  
+ element 9711 and target element 10116.                                  
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:27
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 15 and contact element type 14 has been set up.  The       
+ companion pair has real constant set ID 14.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Pure thermal contact is activated.
+ The emissivity is defined through the material property.
+ Thermal convection coefficient, environment temperature, and
+  heat flux are defined using the SFE command.
+ Target temperature is used for convection/radiation calculation
+  for near field contact.
+ Linear contact is defined
+ Contact detection at: Gauss integration point
+ Average contact surface length               0.99690    
+ Average contact pair depth                   0.75810    
+ Average target surface length                0.75194    
+ User defined pinball region PINB              1.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+ Thermal contact conductance coef. TCC         3929.9    
+ Heat radiation is excluded.
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:27
+ Max.  Initial penetration 8.881784197E-16 was detected between contact  
+ element 9845 and target element 9620.                                   
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:27
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 16 and contact element type 16 has been set up.  The       
+ companion pair has real constant set ID 17.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Pure thermal contact is activated.
+ The emissivity is defined through the material property.
+ Thermal convection coefficient, environment temperature, and
+  heat flux are defined using the SFE command.
+ Target temperature is used for convection/radiation calculation
+  for near field contact.
+ Linear contact is defined
+ Contact detection at: Gauss integration point
+ Average contact surface length               0.99546    
+ Average contact pair depth                   0.75000    
+ Average target surface length                 3.8195    
+ User defined pinball region PINB              1.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+ Thermal contact conductance coef. TCC         3929.9    
+ Heat radiation is excluded.
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:27
+ Max.  Initial penetration 0 was detected between contact element 10367  
+ and target element 10586.                                               
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:27
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 17 and contact element type 16 has been set up.  The       
+ companion pair has real constant set ID 16.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Pure thermal contact is activated.
+ The emissivity is defined through the material property.
+ Thermal convection coefficient, environment temperature, and
+  heat flux are defined using the SFE command.
+ Target temperature is used for convection/radiation calculation
+  for near field contact.
+ Linear contact is defined
+ Contact detection at: Gauss integration point
+ Average contact surface length                3.7277    
+ Average contact pair depth                    3.1750    
+ Average target surface length                0.75194    
+ User defined pinball region PINB              1.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+ Thermal contact conductance coef. TCC         3929.9    
+ Heat radiation is excluded.
+
+ *** NOTE ***                            CP =       0.547   TIME= 10:13:27
+ Max.  Initial penetration 0 was detected between contact element 10560  
+ and target element 10234.                                               
+ ****************************************
+  
+  
+  
+
+  
+  
+     D I S T R I B U T E D   D O M A I N   D E C O M P O S E R
+  
+  ...Number of elements: 11318
+  ...Number of nodes:    19360
+  ...Decompose to 4 CPU domains
+  ...Element load balance ratio =     1.233
+
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
+   TIME AT END OF THE LOAD STEP. . . . . . . . . .  1.0000    
+   AUTOMATIC TIME STEPPING . . . . . . . . . . . .    ON
+      INITIAL NUMBER OF SUBSTEPS . . . . . . . . .     1
+      MAXIMUM NUMBER OF SUBSTEPS . . . . . . . . .  1000
+      MINIMUM NUMBER OF SUBSTEPS . . . . . . . . .     1
+   MAXIMUM NUMBER OF EQUILIBRIUM ITERATIONS. . . .    15
+   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .   YES
+   TRANSIENT (INERTIA) EFFECTS
+      THERMAL DOFS . . . . . . . . . . . . . . . .    ON
+   TRANSIENT INTEGRATION PARAMETERS
+      THETA. . . . . . . . . . . . . . . . . . . .  1.0000    
+      OSCILLATION LIMIT CRITERION. . . . . . . . . 0.50000    
+      TOLERANCE. . . . . . . . . . . . . . . . . .  0.0000    
+   TERMINATE ANALYSIS IF NOT CONVERGED . . . . . .YES (EXIT)  
+   CONVERGENCE CONTROLS
+      LABEL   REFERENCE    TOLERANCE  NORM     MINREF
+       HEAT    0.000       0.1000E-02   2     0.1000E-02
+   COPY INTEGRATION POINT VALUES TO NODE . . . . .YES, FOR ELEMENTS WITH
+                                                  ACTIVE MAT. NONLINEARITIES
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+      RSOL        ALL               
+      EANG        ALL               
+      VENG        ALL               
+      FFLU        ALL               
+      CONT        ALL               
+      MISC        ALL       _ELMISC 
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ *** WARNING ***                         CP =       0.609   TIME= 10:13:28
+ Material property DENS of material 1 of element 1 is evaluated at a     
+ temperature of -0.15, which is below the supplied temperature range.    
+ Temperature range checking terminates.                                  
+
+ *** WARNING ***                         CP =       0.609   TIME= 10:13:28
+ Material property DENS of material 1 of element 1 is evaluated at a     
+ temperature of -0.15, which is below the supplied temperature range.    
+ Temperature range checking terminates.                                  
+
+ *** NOTE ***                            CP =       0.609   TIME= 10:13:28
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 10 and contact element type 10 has been set up.  The       
+ companion pair has real constant set ID 11.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Pure thermal contact is activated.
+ The emissivity is defined through the material property.
+ Thermal convection coefficient, environment temperature, and
+  heat flux are defined using the SFE command.
+ Target temperature is used for convection/radiation calculation
+  for near field contact.
+ Linear contact is defined
+ Contact detection at: Gauss integration point
+ Average contact surface length               0.99546    
+ Average contact pair depth                   0.75000    
+ Average target surface length                 3.8195    
+ User defined pinball region PINB              1.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+ Thermal contact conductance coef. TCC         3929.9    
+ Heat radiation is excluded.
+
+ *** NOTE ***                            CP =       0.609   TIME= 10:13:28
+ Max.  Initial penetration 0 was detected between contact element 8515   
+ and target element 8733.                                                
+ ****************************************
+  
+
+ *** WARNING ***                         CP =       0.609   TIME= 10:13:28
+ Material property DENS of material 1 of element 1 is evaluated at a     
+ temperature of -0.15, which is below the supplied temperature range.    
+ Temperature range checking terminates.                                  
+
+ *** NOTE ***                            CP =       0.609   TIME= 10:13:28
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 11 and contact element type 10 has been set up.  The       
+ companion pair has real constant set ID 10.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Pure thermal contact is activated.
+ The emissivity is defined through the material property.
+ Thermal convection coefficient, environment temperature, and
+  heat flux are defined using the SFE command.
+ Target temperature is used for convection/radiation calculation
+  for near field contact.
+ Linear contact is defined
+ Contact detection at: Gauss integration point
+ Average contact surface length                3.7277    
+ Average contact pair depth                    3.1750    
+ Average target surface length                0.75194    
+ User defined pinball region PINB              1.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+ Thermal contact conductance coef. TCC         3929.9    
+ Heat radiation is excluded.
+
+ *** NOTE ***                            CP =       0.609   TIME= 10:13:28
+ Max.  Initial penetration 0 was detected between contact element 8695   
+ and target element 8424.                                                
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       0.609   TIME= 10:13:28
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 16 and contact element type 16 has been set up.  The       
+ companion pair has real constant set ID 17.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will keep the current pair and deactivate its companion pair,     
+ resulting in asymmetric contact.                                        
+ Pure thermal contact is activated.
+ The emissivity is defined through the material property.
+ Thermal convection coefficient, environment temperature, and
+  heat flux are defined using the SFE command.
+ Target temperature is used for convection/radiation calculation
+  for near field contact.
+ Linear contact is defined
+ Contact detection at: Gauss integration point
+ Average contact surface length               0.99546    
+ Average contact pair depth                   0.75000    
+ Average target surface length                 3.8195    
+ User defined pinball region PINB              1.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+ Thermal contact conductance coef. TCC         3929.9    
+ Heat radiation is excluded.
+
+ *** NOTE ***                            CP =       0.609   TIME= 10:13:28
+ Max.  Initial penetration 0 was detected between contact element 10367  
+ and target element 10586.                                               
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       0.609   TIME= 10:13:28
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 17 and contact element type 16 has been set up.  The       
+ companion pair has real constant set ID 16.  Both pairs should have     
+ the same behavior.                                                      
+ MAPDL will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Pure thermal contact is activated.
+ The emissivity is defined through the material property.
+ Thermal convection coefficient, environment temperature, and
+  heat flux are defined using the SFE command.
+ Target temperature is used for convection/radiation calculation
+  for near field contact.
+ Linear contact is defined
+ Contact detection at: Gauss integration point
+ Average contact surface length                3.7277    
+ Average contact pair depth                    3.1750    
+ Average target surface length                0.75194    
+ User defined pinball region PINB              1.0000    
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+ Thermal contact conductance coef. TCC         3929.9    
+ Heat radiation is excluded.
+
+ *** NOTE ***                            CP =       0.609   TIME= 10:13:28
+ Max.  Initial penetration 0 was detected between contact element 10560  
+ and target element 10234.                                               
+ ****************************************
+  
+
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          10
+ Max.  Penetration of 0 has been detected between contact element 8515   
+ and target element 8733.                                                
+ Contacting area 76.2.                                                   
+ Max.  Pinball distance 1.                                               
+ One of the contact searching regions contains at least 8 target         
+ elements.                                                               
+ *************************************************
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          11
+
+ *** NOTE ***                            CP =       0.672   TIME= 10:13:29
+ Contact pair is inactive.                                               
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          16
+ Max.  Penetration of 0 has been detected between contact element 10367  
+ and target element 10586.                                               
+ Contacting area 76.2.                                                   
+ Max.  Pinball distance 1.                                               
+ One of the contact searching regions contains at least 8 target         
+ elements.                                                               
+ *************************************************
+  
+ *************************************************
+  SUMMARY FOR CONTACT PAIR IDENTIFIED BY REAL CONSTANT SET          17
+
+ *** NOTE ***                            CP =       0.672   TIME= 10:13:29
+ Contact pair is inactive.                                               
+
+
+
+            **** CENTER OF MASS, MASS, AND MASS MOMENTS OF INERTIA ****
+
+  CALCULATIONS ASSUME ELEMENT MASS AT ELEMENT CENTROID
+
+  TOTAL MASS =  0.20269E-03
+
+                           MOM. OF INERTIA         MOM. OF INERTIA
+  CENTER OF MASS            ABOUT ORIGIN        ABOUT CENTER OF MASS
+
+  XC = -0.35729E-15      IXX =   0.1063          IXX =   0.9896E-01
+  YC = -0.13623E-13      IYY =   0.2073E-01      IYY =   0.1339E-01
+  ZC =  -6.0147          IZZ =   0.1062          IZZ =   0.1062    
+                         IXY =  -0.8182E-18      IXY =  -0.8182E-18
+                         IYZ =   0.2683E-17      IYZ =   0.1929E-16
+                         IZX =  -0.7098E-18      IZX =  -0.2742E-18
+
+
+  *** MASS SUMMARY BY ELEMENT TYPE ***
+
+  TYPE      MASS
+     1  0.181745E-05
+     2  0.181745E-05
+     3  0.181745E-05
+     4  0.181745E-05
+     5  0.195424E-03
+
+ Range of element maximum matrix coefficients in global coordinates
+ Maximum = 1371.19405 at element 10522.                                  
+ Minimum = 5.249333333E-05 at element 10880.                             
+
+   *** ELEMENT MATRIX FORMULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1       720  SOLID279      0.000   0.000000
+        2       720  SOLID279      0.000   0.000000
+        3       720  SOLID279      0.000   0.000000
+        4       720  SOLID279      0.000   0.000000
+        5       532  SOLID279      0.000   0.000000
+        6       360  CONTA174      0.031   0.000087
+        7       360  TARGE170      0.000   0.000000
+        8       360  CONTA174      0.000   0.000000
+        9       360  TARGE170      0.000   0.000000
+       10       206  CONTA174      0.000   0.000000
+       11       206  TARGE170      0.000   0.000000
+       12       360  CONTA174      0.000   0.000000
+       13       360  TARGE170      0.000   0.000000
+       14       360  CONTA174      0.000   0.000000
+       15       360  TARGE170      0.000   0.000000
+       16       206  CONTA174      0.031   0.000152
+       17       206  TARGE170      0.000   0.000000
+       18      3482  SURF152       0.016   0.000004
+       19       720  SURF152       0.000   0.000000
+ Time at end of element matrix formulation CP = 0.671875.                
+
+ DISTRIBUTED SPARSE MATRIX DIRECT SOLVER.
+  Number of equations =       19360,    Maximum wavefront =    216
+
+  Process memory allocated for solver              =    20.492 MB
+  Process memory required for in-core solution     =    19.673 MB
+  Process memory required for out-of-core solution =    10.060 MB
+
+  Total memory allocated for solver                =    76.580 MB
+  Total memory required for in-core solution       =    73.456 MB
+  Total memory required for out-of-core solution   =    36.518 MB
+
+ *** NOTE ***                            CP =       0.734   TIME= 10:13:30
+ The Distributed Sparse Matrix Solver is currently running in the        
+ in-core memory mode.  This memory mode uses the most amount of memory   
+ in order to avoid using the hard drive as much as possible, which most  
+ often results in the fastest solution time.  This mode is recommended   
+ if enough physical memory is present to accommodate all of the solver   
+ data.                                                                   
+ Distributed sparse solver maximum pivot= 1086.31448 at node 6874 TEMP.  
+ Distributed sparse solver minimum pivot= 4.6891843 at node 9169 TEMP.   
+ Distributed sparse solver minimum pivot in absolute value= 4.6891843 at 
+ node 9169 TEMP.                                                         
+ Max. Temperature Change=   2694.00
+ Property Change        =   5.22464
+ Property Change Limit  =   0.05000
+
+   *** ELEMENT RESULT CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1       720  SOLID279      0.016   0.000022
+        2       720  SOLID279      0.000   0.000000
+        3       720  SOLID279      0.000   0.000000
+        4       720  SOLID279      0.000   0.000000
+        5       532  SOLID279      0.016   0.000029
+        6       360  CONTA174      0.000   0.000000
+        8       360  CONTA174      0.000   0.000000
+       10       206  CONTA174      0.000   0.000000
+       12       360  CONTA174      0.000   0.000000
+       14       360  CONTA174      0.000   0.000000
+       16       206  CONTA174      0.000   0.000000
+       18      3482  SURF152       0.016   0.000004
+       19       720  SURF152       0.000   0.000000
+
+   *** NODAL LOAD CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1       720  SOLID279      0.000   0.000000
+        2       720  SOLID279      0.000   0.000000
+        3       720  SOLID279      0.000   0.000000
+        4       720  SOLID279      0.000   0.000000
+        5       532  SOLID279      0.000   0.000000
+        6       360  CONTA174      0.000   0.000000
+        8       360  CONTA174      0.000   0.000000
+       10       206  CONTA174      0.000   0.000000
+       12       360  CONTA174      0.000   0.000000
+       14       360  CONTA174      0.000   0.000000
+       16       206  CONTA174      0.000   0.000000
+       18      3482  SURF152       0.000   0.000000
+       19       720  SURF152       0.000   0.000000
+ *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1
+ *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  2.298       OSCILLATION LIMIT =  2.298    
+
+
+ *** MAPDL BINARY FILE STATISTICS
+  BUFFER SIZE USED= 16384
+        3.312 MB WRITTEN ON ELEMENT SAVED DATA FILE: file0.esav
+        3.188 MB WRITTEN ON ASSEMBLED MATRIX FILE: file0.full
+        1.562 MB WRITTEN ON RESULTS FILE: file0.rth
+
+ SET PARAMETER DIMENSIONS ON  VARY_LD TYPE=ARRA  DIMENSIONS= 19360     1     1
+
+ *** WARNING ***                         CP =       0.812   TIME= 10:13:32
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *ENDDO  INDEX= INC1                            
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       0.812   TIME= 10:13:32
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:13:32  JAN 30, 2025 CP=      0.812
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=   1009.77
+ Property Change        =   1.95831
+ Property Change Limit  =   0.05000
+ *** LOAD STEP     2   SUBSTEP     1  COMPLETED.    CUM ITER =      2
+ *** TIME =   2.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  1.583       OSCILLATION LIMIT =  1.583    
+
+ *** WARNING ***                         CP =       1.031   TIME= 10:13:37
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       1.047   TIME= 10:13:37
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:13:37  JAN 30, 2025 CP=      1.062
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    826.22
+ Property Change        =   1.60234
+ Property Change Limit  =   0.05000
+ *** LOAD STEP     3   SUBSTEP     1  COMPLETED.    CUM ITER =      3
+ *** TIME =   3.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  1.772       OSCILLATION LIMIT =  1.772    
+
+ *** WARNING ***                         CP =       1.219   TIME= 10:13:42
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       1.219   TIME= 10:13:42
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:13:42  JAN 30, 2025 CP=      1.234
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    738.20
+ Property Change        =   1.43163
+ Property Change Limit  =   0.05000
+ *** LOAD STEP     4   SUBSTEP     1  COMPLETED.    CUM ITER =      4
+ *** TIME =   4.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  2.415       OSCILLATION LIMIT =  2.415    
+
+ *** WARNING ***                         CP =       1.594   TIME= 10:13:49
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       1.609   TIME= 10:13:49
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:13:49  JAN 30, 2025 CP=      1.641
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    707.44
+ Property Change        =   1.37199
+ Property Change Limit  =   0.05000
+ *** LOAD STEP     5   SUBSTEP     1  COMPLETED.    CUM ITER =      5
+ *** TIME =   5.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  2.733       OSCILLATION LIMIT =  2.733    
+
+ *** WARNING ***                         CP =       1.875   TIME= 10:13:54
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       1.891   TIME= 10:13:54
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:13:54  JAN 30, 2025 CP=      1.906
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    677.45
+ Property Change        =   1.31382
+ Property Change Limit  =   0.05000
+ *** LOAD STEP     6   SUBSTEP     1  COMPLETED.    CUM ITER =      6
+ *** TIME =   6.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.001       OSCILLATION LIMIT =  3.001    
+
+ *** WARNING ***                         CP =       2.109   TIME= 10:13:58
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       2.125   TIME= 10:13:58
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:13:58  JAN 30, 2025 CP=      2.125
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    652.39
+ Property Change        =   1.26522
+ Property Change Limit  =   0.05000
+ *** LOAD STEP     7   SUBSTEP     1  COMPLETED.    CUM ITER =      7
+ *** TIME =   7.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.256       OSCILLATION LIMIT =  3.256    
+
+ *** WARNING ***                         CP =       2.344   TIME= 10:14:02
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       2.359   TIME= 10:14:02
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:14:02  JAN 30, 2025 CP=      2.359
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    635.13
+ Property Change        =   1.23174
+ Property Change Limit  =   0.05000
+ *** LOAD STEP     8   SUBSTEP     1  COMPLETED.    CUM ITER =      8
+ *** TIME =   8.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.461       OSCILLATION LIMIT =  3.461    
+
+ *** WARNING ***                         CP =       2.625   TIME= 10:14:07
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       2.625   TIME= 10:14:07
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:14:07  JAN 30, 2025 CP=      2.672
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    678.64
+ Property Change        =   1.31613
+ Property Change Limit  =   0.05000
+ *** LOAD STEP     9   SUBSTEP     1  COMPLETED.    CUM ITER =      9
+ *** TIME =   9.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.607       OSCILLATION LIMIT =  3.607    
+
+ *** WARNING ***                         CP =       2.938   TIME= 10:14:12
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       2.938   TIME= 10:14:12
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:14:12  JAN 30, 2025 CP=      2.953
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    672.41
+ Property Change        =   1.30404
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    10   SUBSTEP     1  COMPLETED.    CUM ITER =     10
+ *** TIME =   10.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.571       OSCILLATION LIMIT =  3.571    
+
+ *** WARNING ***                         CP =       3.094   TIME= 10:14:16
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       3.094   TIME= 10:14:16
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:14:17  JAN 30, 2025 CP=      3.094
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    658.15
+ Property Change        =   1.27638
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    11   SUBSTEP     1  COMPLETED.    CUM ITER =     11
+ *** TIME =   11.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.424       OSCILLATION LIMIT =  3.424    
+
+ *** WARNING ***                         CP =       3.297   TIME= 10:14:21
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       3.328   TIME= 10:14:21
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:14:21  JAN 30, 2025 CP=      3.375
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    660.15
+ Property Change        =   1.28026
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    12   SUBSTEP     1  COMPLETED.    CUM ITER =     12
+ *** TIME =   12.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.357       OSCILLATION LIMIT =  3.357    
+
+ *** WARNING ***                         CP =       3.641   TIME= 10:14:26
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       3.656   TIME= 10:14:26
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:14:26  JAN 30, 2025 CP=      3.656
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    676.04
+ Property Change        =   1.31109
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    13   SUBSTEP     1  COMPLETED.    CUM ITER =     13
+ *** TIME =   13.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.327       OSCILLATION LIMIT =  3.327    
+
+ *** WARNING ***                         CP =       3.953   TIME= 10:14:32
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       3.953   TIME= 10:14:32
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:14:32  JAN 30, 2025 CP=      3.953
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    679.37
+ Property Change        =   1.31754
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    14   SUBSTEP     1  COMPLETED.    CUM ITER =     14
+ *** TIME =   14.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.318       OSCILLATION LIMIT =  3.318    
+
+ *** WARNING ***                         CP =       4.281   TIME= 10:14:37
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       4.281   TIME= 10:14:37
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:14:37  JAN 30, 2025 CP=      4.297
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    666.28
+ Property Change        =   1.29215
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    15   SUBSTEP     1  COMPLETED.    CUM ITER =     15
+ *** TIME =   15.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.359       OSCILLATION LIMIT =  3.359    
+
+ *** WARNING ***                         CP =       4.547   TIME= 10:14:41
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       4.562   TIME= 10:14:41
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:14:41  JAN 30, 2025 CP=      4.594
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    644.07
+ Property Change        =   1.24908
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    16   SUBSTEP     1  COMPLETED.    CUM ITER =     16
+ *** TIME =   16.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.458       OSCILLATION LIMIT =  3.458    
+
+ *** WARNING ***                         CP =       4.750   TIME= 10:14:46
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       4.750   TIME= 10:14:46
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:14:46  JAN 30, 2025 CP=      4.766
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    633.63
+ Property Change        =   1.22883
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    17   SUBSTEP     1  COMPLETED.    CUM ITER =     17
+ *** TIME =   17.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.584       OSCILLATION LIMIT =  3.584    
+
+ *** WARNING ***                         CP =       5.031   TIME= 10:14:51
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       5.031   TIME= 10:14:51
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:14:51  JAN 30, 2025 CP=      5.062
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    632.69
+ Property Change        =   1.22701
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    18   SUBSTEP     1  COMPLETED.    CUM ITER =     18
+ *** TIME =   18.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.565       OSCILLATION LIMIT =  3.565    
+
+ *** WARNING ***                         CP =       5.312   TIME= 10:14:57
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       5.312   TIME= 10:14:57
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:14:57  JAN 30, 2025 CP=      5.344
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    637.45
+ Property Change        =   1.23624
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    19   SUBSTEP     1  COMPLETED.    CUM ITER =     19
+ *** TIME =   19.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.464       OSCILLATION LIMIT =  3.464    
+
+ *** WARNING ***                         CP =       5.719   TIME= 10:15:03
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       5.734   TIME= 10:15:03
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:15:03  JAN 30, 2025 CP=      5.766
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    653.77
+ Property Change        =   1.26789
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    20   SUBSTEP     1  COMPLETED.    CUM ITER =     20
+ *** TIME =   20.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.429       OSCILLATION LIMIT =  3.429    
+
+ *** WARNING ***                         CP =       5.953   TIME= 10:15:08
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       5.953   TIME= 10:15:08
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:15:08  JAN 30, 2025 CP=      5.969
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    681.94
+ Property Change        =   1.32252
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    21   SUBSTEP     1  COMPLETED.    CUM ITER =     21
+ *** TIME =   21.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.399       OSCILLATION LIMIT =  3.399    
+
+ *** WARNING ***                         CP =       6.109   TIME= 10:15:13
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       6.109   TIME= 10:15:13
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:15:13  JAN 30, 2025 CP=      6.125
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    697.24
+ Property Change        =   1.35220
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    22   SUBSTEP     1  COMPLETED.    CUM ITER =     22
+ *** TIME =   22.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.353       OSCILLATION LIMIT =  3.353    
+
+ *** WARNING ***                         CP =       6.312   TIME= 10:15:18
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       6.312   TIME= 10:15:18
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:15:18  JAN 30, 2025 CP=      6.312
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    694.77
+ Property Change        =   1.34741
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    23   SUBSTEP     1  COMPLETED.    CUM ITER =     23
+ *** TIME =   23.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.338       OSCILLATION LIMIT =  3.338    
+
+ *** WARNING ***                         CP =       6.516   TIME= 10:15:22
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       6.516   TIME= 10:15:22
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:15:22  JAN 30, 2025 CP=      6.516
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    677.22
+ Property Change        =   1.31338
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    24   SUBSTEP     1  COMPLETED.    CUM ITER =     24
+ *** TIME =   24.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.399       OSCILLATION LIMIT =  3.399    
+
+ *** WARNING ***                         CP =       6.641   TIME= 10:15:26
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       6.641   TIME= 10:15:27
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:15:27  JAN 30, 2025 CP=      6.641
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    648.40
+ Property Change        =   1.25749
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    25   SUBSTEP     1  COMPLETED.    CUM ITER =     25
+ *** TIME =   25.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.489       OSCILLATION LIMIT =  3.489    
+
+ *** WARNING ***                         CP =       6.859   TIME= 10:15:31
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       6.859   TIME= 10:15:31
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:15:31  JAN 30, 2025 CP=      6.859
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    606.78
+ Property Change        =   1.17676
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    26   SUBSTEP     1  COMPLETED.    CUM ITER =     26
+ *** TIME =   26.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.482       OSCILLATION LIMIT =  3.482    
+
+ *** WARNING ***                         CP =       6.984   TIME= 10:15:35
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       6.984   TIME= 10:15:35
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:15:35  JAN 30, 2025 CP=      7.000
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    610.36
+ Property Change        =   1.18370
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    27   SUBSTEP     1  COMPLETED.    CUM ITER =     27
+ *** TIME =   27.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.451       OSCILLATION LIMIT =  3.451    
+
+ *** WARNING ***                         CP =       7.219   TIME= 10:15:41
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       7.219   TIME= 10:15:41
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:15:41  JAN 30, 2025 CP=      7.219
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    639.09
+ Property Change        =   1.23942
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    28   SUBSTEP     1  COMPLETED.    CUM ITER =     28
+ *** TIME =   28.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.483       OSCILLATION LIMIT =  3.483    
+
+ *** WARNING ***                         CP =       7.438   TIME= 10:15:46
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       7.438   TIME= 10:15:46
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:15:46  JAN 30, 2025 CP=      7.469
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    671.38
+ Property Change        =   1.30204
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    29   SUBSTEP     1  COMPLETED.    CUM ITER =     29
+ *** TIME =   29.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.478       OSCILLATION LIMIT =  3.478    
+
+ *** WARNING ***                         CP =       7.750   TIME= 10:15:50
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       7.750   TIME= 10:15:51
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:15:51  JAN 30, 2025 CP=      7.781
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    702.85
+ Property Change        =   1.36309
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    30   SUBSTEP     1  COMPLETED.    CUM ITER =     30
+ *** TIME =   30.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.434       OSCILLATION LIMIT =  3.434    
+
+ *** WARNING ***                         CP =       7.984   TIME= 10:15:55
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       7.984   TIME= 10:15:55
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:15:55  JAN 30, 2025 CP=      7.984
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    712.25
+ Property Change        =   1.38131
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    31   SUBSTEP     1  COMPLETED.    CUM ITER =     31
+ *** TIME =   31.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.382       OSCILLATION LIMIT =  3.382    
+
+ *** WARNING ***                         CP =       8.141   TIME= 10:15:59
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       8.141   TIME= 10:16:00
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:16:00  JAN 30, 2025 CP=      8.172
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    703.67
+ Property Change        =   1.36467
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    32   SUBSTEP     1  COMPLETED.    CUM ITER =     32
+ *** TIME =   32.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.368       OSCILLATION LIMIT =  3.368    
+
+ *** WARNING ***                         CP =       8.250   TIME= 10:16:04
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       8.250   TIME= 10:16:04
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:16:04  JAN 30, 2025 CP=      8.266
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    679.34
+ Property Change        =   1.31749
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    33   SUBSTEP     1  COMPLETED.    CUM ITER =     33
+ *** TIME =   33.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.407       OSCILLATION LIMIT =  3.407    
+
+ *** WARNING ***                         CP =       8.500   TIME= 10:16:09
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       8.531   TIME= 10:16:09
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:16:09  JAN 30, 2025 CP=      8.531
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    631.09
+ Property Change        =   1.22391
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    34   SUBSTEP     1  COMPLETED.    CUM ITER =     34
+ *** TIME =   34.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.385       OSCILLATION LIMIT =  3.385    
+
+ *** WARNING ***                         CP =       8.844   TIME= 10:16:13
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       8.875   TIME= 10:16:13
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:16:13  JAN 30, 2025 CP=      8.906
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    597.18
+ Property Change        =   1.15814
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    35   SUBSTEP     1  COMPLETED.    CUM ITER =     35
+ *** TIME =   35.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.400       OSCILLATION LIMIT =  3.400    
+
+ *** WARNING ***                         CP =       9.125   TIME= 10:16:18
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       9.125   TIME= 10:16:18
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:16:18  JAN 30, 2025 CP=      9.141
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    621.24
+ Property Change        =   1.20481
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    36   SUBSTEP     1  COMPLETED.    CUM ITER =     36
+ *** TIME =   36.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.487       OSCILLATION LIMIT =  3.487    
+
+ *** WARNING ***                         CP =       9.359   TIME= 10:16:22
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       9.359   TIME= 10:16:22
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:16:22  JAN 30, 2025 CP=      9.375
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    646.97
+ Property Change        =   1.25470
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    37   SUBSTEP     1  COMPLETED.    CUM ITER =     37
+ *** TIME =   37.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.544       OSCILLATION LIMIT =  3.544    
+
+ *** WARNING ***                         CP =       9.547   TIME= 10:16:27
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       9.562   TIME= 10:16:27
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:16:27  JAN 30, 2025 CP=      9.562
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    686.86
+ Property Change        =   1.33206
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    38   SUBSTEP     1  COMPLETED.    CUM ITER =     38
+ *** TIME =   38.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.512       OSCILLATION LIMIT =  3.512    
+
+ *** WARNING ***                         CP =       9.750   TIME= 10:16:31
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       9.781   TIME= 10:16:31
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:16:31  JAN 30, 2025 CP=      9.812
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    711.01
+ Property Change        =   1.37889
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    39   SUBSTEP     1  COMPLETED.    CUM ITER =     39
+ *** TIME =   39.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.438       OSCILLATION LIMIT =  3.438    
+
+ *** WARNING ***                         CP =      10.062   TIME= 10:16:35
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =      10.094   TIME= 10:16:36
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:16:36  JAN 30, 2025 CP=     10.094
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    714.29
+ Property Change        =   1.38527
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    40   SUBSTEP     1  COMPLETED.    CUM ITER =     40
+ *** TIME =   40.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.368       OSCILLATION LIMIT =  3.368    
+
+ *** WARNING ***                         CP =      10.266   TIME= 10:16:40
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =      10.297   TIME= 10:16:40
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:16:40  JAN 30, 2025 CP=     10.297
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    697.34
+ Property Change        =   1.35239
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    41   SUBSTEP     1  COMPLETED.    CUM ITER =     41
+ *** TIME =   41.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.325       OSCILLATION LIMIT =  3.325    
+
+ *** WARNING ***                         CP =      10.359   TIME= 10:16:44
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =      10.375   TIME= 10:16:44
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:16:44  JAN 30, 2025 CP=     10.375
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    646.00
+ Property Change        =   1.25282
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    42   SUBSTEP     1  COMPLETED.    CUM ITER =     42
+ *** TIME =   42.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.225       OSCILLATION LIMIT =  3.225    
+
+ *** WARNING ***                         CP =      10.594   TIME= 10:16:49
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =      10.609   TIME= 10:16:49
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:16:49  JAN 30, 2025 CP=     10.641
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    618.46
+ Property Change        =   1.19941
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    43   SUBSTEP     1  COMPLETED.    CUM ITER =     43
+ *** TIME =   43.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.217       OSCILLATION LIMIT =  3.217    
+
+ *** WARNING ***                         CP =      10.766   TIME= 10:16:53
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =      10.766   TIME= 10:16:54
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:16:54  JAN 30, 2025 CP=     10.781
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    600.14
+ Property Change        =   1.16389
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    44   SUBSTEP     1  COMPLETED.    CUM ITER =     44
+ *** TIME =   44.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.277       OSCILLATION LIMIT =  3.277    
+
+ *** WARNING ***                         CP =      10.953   TIME= 10:16:58
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =      10.953   TIME= 10:16:58
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:16:58  JAN 30, 2025 CP=     10.984
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    638.83
+ Property Change        =   1.23893
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    45   SUBSTEP     1  COMPLETED.    CUM ITER =     45
+ *** TIME =   45.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.284       OSCILLATION LIMIT =  3.284    
+
+ *** WARNING ***                         CP =      11.188   TIME= 10:17:02
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =      11.188   TIME= 10:17:02
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:17:02  JAN 30, 2025 CP=     11.203
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    659.55
+ Property Change        =   1.27911
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    46   SUBSTEP     1  COMPLETED.    CUM ITER =     46
+ *** TIME =   46.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.205       OSCILLATION LIMIT =  3.205    
+
+ *** WARNING ***                         CP =      11.312   TIME= 10:17:07
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =      11.312   TIME= 10:17:07
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:17:07  JAN 30, 2025 CP=     11.359
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    705.85
+ Property Change        =   1.36889
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    47   SUBSTEP     1  COMPLETED.    CUM ITER =     47
+ *** TIME =   47.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.064       OSCILLATION LIMIT =  3.064    
+
+ *** WARNING ***                         CP =      11.594   TIME= 10:17:12
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =      11.625   TIME= 10:17:12
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:17:12  JAN 30, 2025 CP=     11.641
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    739.61
+ Property Change        =   1.43437
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    48   SUBSTEP     1  COMPLETED.    CUM ITER =     48
+ *** TIME =   48.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  2.964       OSCILLATION LIMIT =  2.964    
+
+ *** WARNING ***                         CP =      11.734   TIME= 10:17:16
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =      11.750   TIME= 10:17:16
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:17:16  JAN 30, 2025 CP=     11.750
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    758.92
+ Property Change        =   1.47182
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    49   SUBSTEP     1  COMPLETED.    CUM ITER =     49
+ *** TIME =   49.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  2.984       OSCILLATION LIMIT =  2.984    
+
+ *** WARNING ***                         CP =      11.891   TIME= 10:17:22
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =      11.891   TIME= 10:17:22
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:17:22  JAN 30, 2025 CP=     11.891
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    862.80
+ Property Change        =   1.67328
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    50   SUBSTEP     1  COMPLETED.    CUM ITER =     50
+ *** TIME =   50.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  3.598       OSCILLATION LIMIT =  3.598    
+
+ *** WARNING ***                         CP =      11.984   TIME= 10:17:27
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *****  MAPDL SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =      12.000   TIME= 10:17:27
+ Material number 18 (used by element 10599) should normally have at      
+ least one MP or one TB type command associated with it.  Output of      
+ energy by material may not be available.                                
+
+ *** MAPDL - ENGINEERING ANALYSIS SYSTEM  RELEASE 2024 R1          24.1     ***
+ Ansys Mechanical Enterprise Academic Research     
+ 00624044  VERSION=WINDOWS x64   10:17:27  JAN 30, 2025 CP=     12.000
+
+ project1--Transient Thermal (C5)                                              
+
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+ Max. Temperature Change=    757.73
+ Property Change        =   1.46952
+ Property Change Limit  =   0.05000
+ *** LOAD STEP    51   SUBSTEP     1  COMPLETED.    CUM ITER =     51
+ *** TIME =   51.0000         TIME INC =   1.00000      NEW TRIANG MATRIX
+ *** RESPONSE EIGENVALUE =  6.209       OSCILLATION LIMIT =  6.209    
+
+ *** WARNING ***                         CP =      12.125   TIME= 10:17:33
+ Parameter VARY_LD already exists.  It is deleted and redefined by the   
+ *DIM command.                                                           
+
+ *** ERROR ***                           CP =      12.125   TIME= 10:17:33
+ Subscript range error.  Parameter PT_LEN1 is dimensioned as 91 x 1,     
+ but location -1 x 1 is being requested                                  
+                                                                         
+
+ *** ERROR ***                           CP =      12.125   TIME= 10:17:33
+ No data exists for dimensioned parameter PT_LEN1 with subscripts -1 x   
+ 1.                                                                      
+
+ *** ERROR ***                           CP =      12.125   TIME= 10:17:33
+ The above error occurred processing field= DIST1-PT_LEN1(LOC31,1)       
+  Line= *SET,RT,                                                         
+ ((DIST%INDEX(INC2,1)%-PT_LEN%INDEX(INC2,1)%(LOC3%INDEX(INC2,1)%,1))/(PT 
+ _LEN%INDEX(INC2,1)%(LOC2%INDEX(INC2,1)%,1)-PT_LEN%INDEX(INC2,1)%(LOC3%I 
+ INDEX(INC2,1)%,1).                                                      
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=        116
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          3
+
+ *** WARNING ***                         CP =      12.125   TIME= 10:17:33
+ During this session the elapsed time exceeds the CPU time by 1960%.     
+ This often indicates either a lack of physical memory (RAM) required    
+ to efficiently handle this simulation or a particularly slow hard       
+ drive configuration.  This simulation can be expected to run faster on  
+ identical hardware if additional RAM or a faster hard drive             
+ configuration is made available.  For more details, please see the      
+ Mechanical APDL Performance Guide which is part of the Ansys Help       
+ system.                                                                 
+
++--------------------- M A P D L   S T A T I S T I C S ------------------------+
+
+Release: 2024 R1            Build: 24.1       Update: UP20231106   Platform: WINDOWS x64 
+Date Run: 01/30/2025   Time: 10:17     Process ID: 18772
+Operating System: Windows 11  (Build: 22621)
+
+Processor Model: 13th Gen Intel(R) Core(TM) i9-13900
+
+Compiler: Intel(R) Fortran Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) C/C++ Compiler Classic Version 2021.9  (Build: 20230302)
+          Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191125
+          BLAS Library supplied by Intel(R) MKL
+
+Number of machines requested            :    1
+Total number of cores available         :   32
+Number of physical cores available      :   24
+Number of processes requested           :    4
+Number of threads per process requested :    1
+Total number of cores requested         :    4 (Distributed Memory Parallel)               
+MPI Type: INTELMPI
+MPI Version: Intel(R) MPI Library 2021.10 for Windows* OS
+
+
+GPU Acceleration: Not Requested
+
+Job Name: file0
+Input File: dummy.dat
+
+  Core                Machine Name   Working Directory
+ -----------------------------------------------------
+     0                    me263367   H:\spring2025\additive1\_ProjectScratch\ScrE008
+     1                    me263367   H:\spring2025\additive1\_ProjectScratch\ScrE008
+     2                    me263367   H:\spring2025\additive1\_ProjectScratch\ScrE008
+     3                    me263367   H:\spring2025\additive1\_ProjectScratch\ScrE008
+ 
+Latency time from master to core     1 =    1.214 microseconds
+Latency time from master to core     2 =    1.205 microseconds
+Latency time from master to core     3 =    1.204 microseconds
+ 
+Communication speed from master to core     1 = 13384.64 MB/sec
+Communication speed from master to core     2 = 15375.74 MB/sec
+Communication speed from master to core     3 = 12506.84 MB/sec
+
+Total CPU time for main thread                    :       12.4 seconds
+Total CPU time summed for all threads             :       12.1 seconds
+
+Elapsed time spent obtaining a license            :        0.4 seconds
+Elapsed time spent pre-processing model (/PREP7)  :        3.0 seconds
+Elapsed time spent solution - preprocessing       :       10.5 seconds
+Elapsed time spent computing solution             :      232.4 seconds
+Elapsed time spent solution - postprocessing      :        0.0 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+ 
+Equation solver used                              :            Sparse (symmetric)
+
+Sum of disk space used on all processes           :      117.9 MB
+
+Sum of memory used on all processes               :      673.0 MB
+Sum of memory allocated on all processes          :     2880.0 MB
+Physical memory available                         :         32 GB
+Total amount of I/O written to disk               :        1.5 GB
+Total amount of I/O read from disk                :        4.7 GB
+
++------------------ E N D   M A P D L   S T A T I S T I C S -------------------+
+
+
+ *-----------------------------------------------------------------------------*
+ |                                                                             |
+ |                               RUN COMPLETED                                 |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Ansys MAPDL 2024 R1         Build 24.1         UP20231106    WINDOWS x64   |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |  Database Requested(-db)     1024 MB     Scratch Memory Requested   1024 MB |
+ |  Max Database Used(Master)     29 MB     Max Scratch Used(Master)    166 MB |
+ |  Max Database Used(Workers)     1 MB     Max Scratch Used(Workers)   161 MB |
+ |  Sum Database Used(All)        32 MB     Sum Scratch Used(All)       641 MB |
+ |                                                                             |
+ |-----------------------------------------------------------------------------|
+ |                                                                             |
+ |        CP Time      (sec) =         12.125       Time  =  10:17:33          |
+ |        Elapsed Time (sec) =        256.000       Date  =  01/30/2025        |
+ |                                                                             |
+ *-----------------------------------------------------------------------------*

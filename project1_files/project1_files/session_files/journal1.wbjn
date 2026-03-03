@@ -1,0 +1,62 @@
+# encoding: utf-8
+# 2024 R1
+SetScriptVersion(Version="24.1.144")
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system1 = template1.CreateSystem()
+template2 = GetTemplate(TemplateName="EngData")
+system2 = template2.CreateSystem()
+system1.Delete()
+engineeringData1 = system2.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+material1.Delete()
+favorites1 = EngData.LoadFavoriteItems()
+library1 = EngData.OpenLibrary(
+    Name="Additive Manufacturing Materials",
+    Source="Additive_Manufacturing_Materials.xml")
+matl1 = engineeringData1.ImportMaterial(
+    Name="316 Stainless Steel",
+    Source="Additive_Manufacturing_Materials.xml")
+template3 = GetTemplate(TemplateName="Geometry")
+system3 = template3.CreateSystem(
+    Position="Right",
+    RelativeTo=system2)
+geometry1 = system3.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="C:/Users/jmr180004/Downloads/thin_wall.x_t")
+template4 = GetTemplate(
+    TemplateName="Transient Thermal",
+    Solver="ANSYS")
+system4 = template4.CreateSystem(
+    Position="Right",
+    RelativeTo=system3)
+engineeringDataComponent1 = system4.GetComponent(Name="Engineering Data")
+engineeringDataComponent2 = system2.GetComponent(Name="Engineering Data")
+engineeringDataComponent1.ReplaceWithShare(
+    TargetSystem=system4,
+    ComponentToShare=engineeringDataComponent2,
+    SourceSystem=system2)
+geometryComponent1 = system4.GetComponent(Name="Geometry")
+geometryComponent2 = system3.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system4,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system3)
+modelComponent1 = system4.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system4.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+model1.Exit()
+Extensions.InstallExtension(
+    ExtensionFileName=r"C:\Users\jmr180004\Downloads\Moving_HeatSource_Extension\Moving_HeatSource_Extension\ACT_MovingHeat_R170_v4.1\MovingHeat\bin\MovingHeat.wbex",
+    ForceInstall=True)
+setup1 = system4.GetContainer(ComponentName="Setup")
+setup1.Edit()
+model1.Exit()
+Extensions.LoadExtension(
+    Id="dc7b91d1-0fd6-439f-811e-316ced903703",
+    Version="4.1",
+    Format="Binary")
+setup1.Edit()
+Save(Overwrite=True)
